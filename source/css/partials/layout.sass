@@ -1,0 +1,81 @@
+.l-module, %l-module
+  width: 100%
+  vertical-align: top
+  overflow: hidden
+
+.l-module--spaced
+  @extend %l-module
+  padding: $l-l 0
+  @media only screen and (min-width: $second-break)
+    padding: $l-xxl 0
+
+.l-module--wide
+  @extend %l-module
+  padding: $l-m 0
+  @media only screen and (min-width: $second-break)
+    padding: $l-xl 0
+
+
+.l-container, %l-container
+  width: 90%
+  max-width: 1280px
+  margin: 0 auto
+  display: block
+  overflow: hidden
+
+.overflow
+  overflow: visible !important
+
+.l-container--thin
+  @extend %l-container
+  padding: $l-s
+
+.l-container--wide
+  @extend %l-container
+  padding: $l-s
+  @media only screen and (min-width: $second-break)
+    padding: $l-l
+
+.l-container--narrow
+  @extend .l-container--wide
+  max-width: 800px  
+
+.l-container--list
+  @extend %l-container
+  width: 95% 
+  max-width: 1353px
+.l-container--full
+  @extend %l-container
+  width: 100%
+  max-width: 90%
+  @media only screen and (min-width: $second-break)
+    max-width: 90%
+
+.grey-bg
+  background: #f9f9f9
+
+.border-bottom
+  border-bottom: 1px solid $c-lightergrey
+.border-top
+  border-top: 1px solid $c-lightergrey  
+
+.two-thirds
+  width: 100%
+  @media only screen and (min-width: $second-break)
+    width: 60%
+
+.one-third
+  width: 100%
+  @media only screen and (min-width: $second-break)
+    width: 30%  
+
+.one-half
+  width: 100%
+  @media only screen and (min-width: $second-break)
+    width: 50%  
+
+.fl
+  float: left
+
+.fr
+  float: right
