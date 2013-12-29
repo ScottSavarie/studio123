@@ -9,6 +9,13 @@
   @media only screen and (min-width: $second-break)
     padding: $l-xxl 0
 
+
+.l-module--max
+  @extend %l-module
+  padding: $l-l 0
+  @media only screen and (min-width: $second-break)
+    padding: $l-xxl*2 0
+
 .l-module--wide
   @extend %l-module
   padding: $l-m 0
@@ -52,7 +59,9 @@
     max-width: 90%
 
 .grey-bg
-  background: #f9f9f9
+  background: $c-grey
+  h1, h2, h3, h4, p,
+    color: white
 
 .border-bottom
   border-bottom: 1px solid $c-grey
@@ -74,8 +83,13 @@
   @media only screen and (min-width: $second-break)
     width: 50%  
 
+.txt-center
+  text-align: center
+
+
 .fl
   float: left
 
 .fr
   float: right
+
