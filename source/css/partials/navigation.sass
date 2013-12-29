@@ -1,1 +1,35 @@
+.nav-main
+	position: absolute
+	z-index: 100
+	width: 100%
+	@media only screen and (min-width: $second-break)
+		padding: 0 5%
 
+.logo
+	width: 60px
+	@media only screen and (min-width: $second-break)
+		width: 70px
+.nav-links
+	float: right
+	padding-right: 5%
+	@media only screen and (min-width: $second-break)
+		padding-right: 0
+	li
+		+inline-block
+		padding: $l-m $l-s
+
+a.nav-link, a.nav-link:visited, %nav-link
+	color: white
+	+single-transition(all, 0.2s, ease-out)
+	&:hover, &:focus
+		color: $c-yellow
+
+a.nav-link--red, a.nav-link--red:visited
+	@extend %nav-link
+	&:hover, &:focus
+		color: $c-red
+
+a.nav-link--blue, a.nav-link--blue:visited
+	@extend %nav-link
+	&:hover, &:focus
+		color: $c-blue
