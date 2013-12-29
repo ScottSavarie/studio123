@@ -55,13 +55,34 @@
 .is-hidden
   +opacity(0)
 
-
 .three-col
-  width: 33%
-  vertical-align: top
-  display: inline-block
-  padding-right: 8%
-  text-align: left
+  .img-wrap
+    text-align: center
+    padding-bottom: $l-l
+    img 
+      width: 115px
+
+
+.chart
+  position: relative
+  overflow: visible
+  img
+    display: none
+  @media only screen and (min-width: $second-break)
+    margin-bottom: 18%
+    img
+      display: block
+      position: absolute
+      top: 260px
+      width: 80%
+      max-width: 811px
+      background-size: contain
+      height: 156px
+      left: 10%
+  @media only screen and (min-width: $third-break + 100)
+    img
+      width: 100%
+      left: 0  
 
 
 

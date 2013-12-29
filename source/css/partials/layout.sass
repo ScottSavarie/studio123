@@ -62,6 +62,11 @@
   background: $c-grey
   h1, h2, h3, h4, p,
     color: white
+.darkgrey-bg
+  background: $c-darkgrey
+  h1, h2, h3, h4, p,
+    color: white
+
 
 .border-bottom
   border-bottom: 1px solid $c-grey
@@ -92,4 +97,24 @@
 
 .fr
   float: right
+
+.mb-small
+  margin-bottom: 0.2em
+
+
+
+.three-col
+  width: 100%
+  margin-top: $l-xxl
+  h2
+    padding-bottom: $l-s / 1.8
+  @media only screen and (min-width: $second-break)
+    width: 32%
+    vertical-align: top
+    display: inline-block
+    padding: 3%
+    text-align: left
+    margin-top: 0
+  @media only screen and (min-width: $third-break)
+    width: 33%
 
