@@ -3,6 +3,7 @@
 .header
   height: 100%
   overflow: hidden
+  background: $c-darkgrey
 
 .header-video-wrapper
   position: absolute
@@ -13,6 +14,7 @@
   overflow: hidden
 
 .home-video--intro
+  visibility: hidden
   position: relative
   top: 0
   left: 0
@@ -20,6 +22,8 @@
   margin: 0 auto
   min-width: 100%
   min-height: 100%
+  @media only screen and (min-width: $third-break)
+    visibility: visible    
 
 
 .header-content-wrap
@@ -55,6 +59,30 @@
 .is-hidden
   +opacity(0)
 
+
+.intro-text
+  +single-transition(all, 0.2s, ease-out)
+  overflow: hidden
+  +rotateX(-90deg)
+  +opacity(0)
+
+.flipped
+  +single-transition(all, 0.2s, ease-out, 0.5s)
+  overflow: hidden
+  +rotateX(0deg)
+  +opacity(1)
+
+.no-js
+  .intro-text
+    overflow: hidden
+    +rotateX(0)
+    +opacity(1)
+  
+
+
+
+
+// scroll services styles 
 .three-col
   .img-wrap
     text-align: center
@@ -76,7 +104,6 @@
       top: 260px
       width: 80%
       max-width: 811px
-      background-size: contain
       height: 156px
       left: 10%
   @media only screen and (min-width: $third-break + 100)
@@ -116,6 +143,31 @@
 
 
 
+
+
+.icon-one, .icon-two, .icon-three,
+  @media only screen and (min-width: $third-break)
+    +scale(0.8)
+    +opacity(0)
+
+.icon-chart
+  @media only screen and (min-width: $third-break)
+    +opacity(0)
+
+.icon-visible
+  +single-transition(all, 0.2s, cubic-bezier(0, 0.14, 0.16, 2))
+  +scale(1)
+  +opacity(1)
+
+
+.no-js
+  #icon-one, #icon-two, #icon-three
+  +scale(1)
+  +opacity(1)
+
+
+
+
 // Team style 
 
 .team-module
@@ -137,8 +189,6 @@
 .team-content
   padding: 5%
   margin: 0 0 $l-xl 0 
-  h1
-    font-weight: 100
   @media only screen and (min-width: $first-break)
     margin: $l-xl 0
     width: 50%
@@ -181,10 +231,17 @@
    
 
 .contact
-  background: url("../img/building.jpg")
+  background: url("../img/building.jpg") no-repeat
   min-height: 400px
-  background-attachment: fixed
+  background-size: cover
+  @media only screen and (min-width: $second-break)
+    background-attachment: fixed
 
 .pin-img
   margin-bottom: $l-m
+
+
+
+
+
 

@@ -9,15 +9,25 @@ p
 .f-header-large--white
   color: white
   font-weight: 100
-  font-size: $f-xl
+  font-size: $f-l
+  @media only screen and (min-width: $first-break)
+    font-size: $f-l *1.5
+  @media only screen and (min-width: $second-break)
+    font-size: $f-xl
 
 .f-header-large
   font-weight: 100
-  font-size: $f-xl 
+  font-size: $f-l
+  @media only screen and (min-width: $first-break)
+    font-size: $f-l *1.5
+  @media only screen and (min-width: $second-break)
+    font-size: $f-xl
 
 .f-subhead
   font-weight: 100
-  font-size: $f-l
+  font-size: $f-m
+  @media only screen and (min-width: $first-break)
+    font-size: $f-l
 
 .is-bold
   font-weight: 400

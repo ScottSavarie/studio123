@@ -4,3 +4,15 @@
     +inline-block
     padding-right: $l-s/2
     font-size: $f-l
+
+a.btn-main, a:visited.btn-main
+  color: white
+  padding: $l-m $l-xl
+  border: 1px solid white
+  position: relative
+  +inline-block
+  +single-transition(all, 0.2s, ease-out)
+  &:hover, &:focus
+    background: rgba(255,255,255,0.5)
+  &:active
+    top: 1px

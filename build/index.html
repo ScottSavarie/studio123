@@ -28,7 +28,7 @@
       <img alt='Studio 123 Logo' class='logo' src='img/studio123-logo.jpg'>
       <ul class='nav-links'>
         <li>
-          <a class='nav-link' href='#'>
+          <a class='nav-link' href='#about'>
             <span>About</span>
           </a>
         </li>
@@ -38,16 +38,16 @@
           </a>
         </li>
         <li>
-          <a class='nav-link--blue' href='#'>
+          <a class='nav-link--blue' href='#contact'>
             <span>Contact</span>
           </a>
         </li>
       </ul>
     </nav>
-    <header class='header'>
+    <header class='header' id='header'>
       <div class='header-content-wrap'>
         <article class='header-content'>
-          <h1 class='f-header-large--white'>
+          <h1 class='f-header-large--white intro-text'>
             <span class='is-bold'>Studio123</span>
             <span>is a wonder factory.</span>
           </h1>
@@ -56,7 +56,7 @@
       <div class='header-video-wrapper'>
         <div class='video-overlay' id='video-overlay'></div>
         <div class='video-overlay-two is-hidden' id='video-overlay-two'></div>
-        <video webkit-playsinline id="home-video--intro"class="home-video--intro" autoplay="autoplay" poster="img/video-poster2.png" loop="true"><source src="videos/123_bannervid.mp4" type="video/mp4" /><source src="videos/123_bannervid.oggtheora.ogg" type="video/ogg"/><source src="videos/123_bannervid.webmsd.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/123_bannervid.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--><img src="img/video-poster2.jpg" width="1389" height="614" alt="Video"></object></video>
+        <video webkit-playsinline id="home-video--intro"class="home-video--intro" autoplay="autoplay" loop="true"><source src="videos/123_bannervid.mp4" type="video/mp4" /><source src="videos/123_bannervid.oggtheora.ogg" type="video/ogg"/><source src="videos/123_bannervid.webmsd.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/123_bannervid.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--><img src="img/video-poster2.jpg" width="1389" height="614" alt="Video"></object></video>
       </div>
     </header>
     <section class='l-module--max'>
@@ -68,28 +68,28 @@
     </section>
     <section class='l-module--max darkgrey-bg'>
       <div class='l-container--narrow chart'>
-        <img alt='Studio 123 Chart Icon' src='img/chart.svg'>
-        <h1 class='f-header-large mb-small'>Take your work seriously, not yourself.</h1>
+        <img alt='Studio 123 Chart Icon' class='icon-chart' src='img/chart.svg'>
+        <h1 class='f-header-large mb-small' id='about'>Take your work seriously, not yourself.</h1>
         <p class='f-subhead'>We believe in working hard, playing hard, and often blending the two. Einstein said that "Play is the highest form of research." Play sparks exploration. Play keeps us from getting bored and boring. Play is good for business.</p>
       </div>
       <div class='l-container'>
         <div class='three-col'>
           <div class='img-wrap'>
-            <img alt='Studio 123 Collaboration Icon' src='img/studio1.svg'>
+            <img alt='Studio 123 Business Icon' class='icon-one' src='img/studio1.svg'>
           </div>
           <h2>Good design is good for business.</h2>
           <p>Good design is essential to overcome today’s challenges. We organize complex ideas into simple, beautiful tools that work for you. We will help you craft your communications to help grow your business and reach your goals.</p>
         </div>
         <div class='three-col'>
           <div class='img-wrap'>
-            <img alt='Studio 123 Collaboration Icon' src='img/studio2.svg'>
+            <img alt='Studio 123 Collaboration Icon' class='icon-two' src='img/studio2.svg'>
           </div>
           <h2>Collaboration is the common thread.</h2>
           <p>We believe that the best things stem from collaboration. Studio123's approach fosters collaboration between our team and our yours and drives everything we create. Even our physical studio space is conducive to team-oriented creativity and design. Collaboration means that we succeed when you succeed.</p>
         </div>
         <div class='three-col'>
           <div class='img-wrap'>
-            <img alt='Studio 123 Collaboration Icon' src='img/studio3.svg'>
+            <img alt='Studio 123 Rules Icon' class='icon-three' src='img/studio3.svg'>
           </div>
           <h2>Know the rules. Have fun breaking them.</h2>
           <p>In order for us to do our best work, we have set up some boundaries. Since we do our best creative work in the mornings, we only schedule meetings in the afternoons and and do our best to avoid email and other things electronic before 10 AM.</p>
@@ -115,7 +115,7 @@
         <div class='team-module'>
           <img alt='Chris Image' class='team-img' src='img/chris.jpg'>
           <div class='team-content'>
-            <h1><span class="is-bold">Christian Pelletier</span> is a graphic designer by day, community artist by night and disc jockey by accident.</h1>
+            <h1 class='f-subhead'><span class="is-bold">Christian Pelletier</span> is a graphic designer by day, community artist by night and disc jockey by accident.</h1>
             <ul class='nav-social ss-icon'>
               <li>
                 <a href="http://www.twitter.com/bureaugroup" target="blank">twitter</a>
@@ -135,7 +135,7 @@
         <div class='team-module'>
           <img alt='Nico Image' class='team-img--right' src='img/nico.jpg'>
           <div class='team-content--right'>
-            <h1><span class="is-bold">Nico Taus</span> is a graphic designer, outspoken design columnist, vegetarian meditator and tattooless punk.</h1>
+            <h1 class='f-subhead'><span class="is-bold">Nico Taus</span> is a graphic designer, outspoken design columnist, vegetarian meditator and tattooless punk.</h1>
             <ul class='nav-social ss-icon'>
               <li>
                 <a href="http://www.twitter.com/bureaugroup" target="blank">twitter</a>
@@ -155,7 +155,7 @@
         <div class='team-module'>
           <img alt='Rob Image' class='team-img' src='img/rob.jpg'>
           <div class='team-content'>
-            <h1><span class="is-bold">Rob Roy</span> is a motion picture creator, business manager and community-minded dude with a mean kickflip.</h1>
+            <h1 class='f-subhead'><span class="is-bold">Rob Roy</span> is a motion picture creator, business manager and community-minded dude with a mean kickflip.</h1>
             <ul class='nav-social ss-icon'>
               <li>
                 <a href="http://www.twitter.com/bureaugroup" target="blank">twitter</a>
@@ -177,12 +177,17 @@
         </div>
       </div>
     </section>
-    <section class='l-module--max txt-center contact'>
+    <section class='l-module--max txt-center contact' id='contact'>
       <div class='l-container--wide'>
         <img alt='Pin Image' class='pin-img' src='img/pin.svg'>
         <h1 class='f-header-large--white'>
-          Our studio is located in an abandoned Inco lunch room in an old mine 7 km under downtown Sudbury. That’s not true, but we will be announcing the opening of our new studio space very very soon. Stay tuned.
+          Our studio is located in an abandoned Inco lunch room in an old mine 7 km under downtown Sudbury. That’s not true, but we will be announcing the opening of our new studio space very very soon.
         </h1>
+      </div>
+      <div class='l-container--wide'>
+        <a class='btn-main' href='http://www.twitter.com/studio123'>
+          <span>Stay tuned</span>
+        </a>
       </div>
     </section>
     <div></div>

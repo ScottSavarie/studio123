@@ -1,37 +1,46 @@
 .nav-main
-	position: absolute
-	z-index: 100
-	width: 100%
-	@media only screen and (min-width: $second-break)
-		padding: 0 5%
+  position: absolute
+  z-index: 100
+  width: 100%
+  top: -100px
+  @media only screen and (min-width: $second-break)
+    padding: 0 5%
+
+.show-nav
+  +single-transition(all, 0.4s, ease-out)
+  top: 0
+
+.no-js
+  .nav-main
+    top: 0
 
 .logo
-	width: 60px
-	@media only screen and (min-width: $second-break)
-		width: 70px
+  width: 60px
+  @media only screen and (min-width: $second-break)
+    width: 70px
 .nav-links
-	float: right
-	padding-right: 5%
-	@media only screen and (min-width: $second-break)
-		padding-right: 0
-	li
-		+inline-block
-		padding: $l-m $l-s
+  float: right
+  padding-right: 5%
+  @media only screen and (min-width: $second-break)
+    padding-right: 0
+  li
+    +inline-block
+    padding: $l-m $l-s
 
 a.nav-link, a.nav-link:visited, %nav-link
-	color: white
-	text-transform: uppercase
-	font-size: $f-s*0.95
-	+single-transition(all, 0.2s, ease-out)
-	&:hover, &:focus
-		color: $c-yellow
+  color: white
+  text-transform: uppercase
+  font-size: $f-s*0.95
+  +single-transition(all, 0.2s, ease-out)
+  &:hover, &:focus
+    color: $c-yellow
 
 a.nav-link--red, a.nav-link--red:visited
-	@extend %nav-link
-	&:hover, &:focus
-		color: $c-red
+  @extend %nav-link
+  &:hover, &:focus
+    color: $c-red
 
 a.nav-link--blue, a.nav-link--blue:visited
-	@extend %nav-link
-	&:hover, &:focus
-		color: $c-blue
+  @extend %nav-link
+  &:hover, &:focus
+    color: $c-blue
