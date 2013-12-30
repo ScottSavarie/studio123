@@ -85,4 +85,21 @@
       left: 0  
 
 
-
+.services-list
+  border: 1px solid $c-grey  
+  
+  li
+    width: 100%
+    border-bottom: 1px solid $c-grey
+    padding: $l-m $l-s*1.5
+    color: white
+  @media only screen and (min-width: $first-break)
+    li
+      width: 50%
+      float: left
+    li:nth-child(2n+2) 
+      border-left: 1px solid $c-grey
+    li:nth-child(7), li:nth-child(8)  
+      border-bottom: none
+    br
+      clear: left  

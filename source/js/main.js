@@ -20,7 +20,7 @@ colorSwapOne = function(){
     $("#video-overlay").toggleClass("is-hidden");
 }
 
-colorSwapOne = function(){
+colorSwapTwo = function(){
     $("#video-overlay-two").toggleClass("is-hidden");
 }
 
