@@ -87,7 +87,9 @@
 
 
 .services-list
-  border: 1px solid $c-grey  
+  border: 1px solid $c-grey 
+  br
+    display: none
   
   li
     width: 100%
@@ -103,9 +105,86 @@
     li:nth-child(7), li:nth-child(8)  
       border-bottom: none
     br
+      display: block
       clear: left  
 
 .service-header
   margin-top: $l-m
   text-align: center
   padding-bottom: $l-s
+
+
+
+
+// Team style 
+
+.team-module
+  @media only screen and (min-width: $third-break)
+    width: 33.33%
+    float: left
+    padding: 2%
+
+
+.team-img
+  +border-radius(300px)
+  @media only screen and (min-width: $first-break)
+    width: 50% 
+    float: left
+  @media only screen and (min-width: $third-break)
+    width: 100%
+    float: none
+
+.team-content
+  padding: 5%
+  margin: 0 0 $l-xl 0 
+  h1
+    font-weight: 100
+  @media only screen and (min-width: $first-break)
+    margin: $l-xl 0
+    width: 50%
+    float: left
+  @media only screen and (min-width: $third-break)
+    width: 100%
+    margin: $l-m 0 0 0
+    float: none
+    padding: 10% 0 0 0
+    min-height: initial
+   
+
+
+
+
+.team-img--right
+  +border-radius(300px)
+  @media only screen and (min-width: $first-break)
+    width: 50% 
+    float: right
+  @media only screen and (min-width: $third-break)
+    width: 100%
+    float: none
+
+.team-content--right
+  padding: 5%
+  margin: 0 0 $l-xl 0 
+  h1
+    font-weight: 100
+  @media only screen and (min-width: $first-break)
+    margin: $l-xl 0
+    width: 50%
+    float: right
+  @media only screen and (min-width: $third-break)
+    width: 100%
+    margin: $l-m 0 0 0
+    float: none
+    padding: 10% 0 0 0
+    min-height: initial
+   
+
+.contact
+  background: url("../img/building.jpg")
+  min-height: 400px
+  background-attachment: fixed
+
+.pin-img
+  margin-bottom: $l-m
+

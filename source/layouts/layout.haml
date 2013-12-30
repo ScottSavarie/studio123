@@ -16,7 +16,9 @@
     %meta{:content => "yes", :name => "apple-touch-fullscreen"}
     / Place favicon.ico and apple-touch-icon.png in the root directory
     %link{:href => "css/style.css", :rel => "stylesheet"}
+    %link{:href => "webfonts/ss-social-circle.css", :rel => "stylesheet"}
     %link{:href => "http://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}
+    
     %script{:src => "//use.typekit.net/ncx2trm.js"}
     :javascript
       try{Typekit.load();}catch(e){}
@@ -27,6 +29,7 @@
     = yield
     = partial "footer"
     %script{:src => "js/modules/jquery-1.8.3.min.js"}
+    %script{:src => "webfonts/ss-social.js"}
     %script{:src => "js/modules/respond.min.js"}
     %script{:src => "js/main.js"}
 
@@ -36,3 +39,8 @@
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
+
+
+
+
+
