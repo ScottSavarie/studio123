@@ -1,6 +1,6 @@
 ---
-title: "title"
-description: "description"
+title: "Studio 123 — A Creative Agency"
+description: "Studio 123 is a creative design agency located in Northern Ontario, Canada. We specialize in: Communication strategy, Branding, Online marketing, Websites and apps, Print communication, Social media strategy, Audio and video, and Content creation"
 ---
 
 - @body_class = 'page-home'
@@ -13,25 +13,29 @@ description: "description"
     %article.header-content
       %h1.f-header-large--white.intro-text 
         %span.is-bold Studio123 
-        %span is a wonder factory.
+        %span is a wonder factory.  
+      %a.btn-main#intro-btn.intro-btn{:href=>"#about"}
+        %span Find out how
+
 
   .header-video-wrapper
     .video-overlay#video-overlay
     .video-overlay-two#video-overlay-two.is-hidden
-    <video webkit-playsinline id="home-video--intro"class="home-video--intro" autoplay="autoplay" loop="true"><source src="videos/123_bannervid.mp4" type="video/mp4" /><source src="videos/123_bannervid.oggtheora.ogg" type="video/ogg"/><source src="videos/123_bannervid.webmsd.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/123_bannervid.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--><img src="img/video-poster2.jpg" width="1389" height="614" alt="Video"></object></video>
+    <video webkit-playsinline id="home-video--intro"class="home-video--intro" autoplay="autoplay" loop="true"><source src="videos/123_bannervid.mp4" type="video/mp4" /><source src="videos/123_bannervid.ogv" type="video/ogv"/><source src="videos/123_bannervid.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/123_bannervid.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--><img src="img/video-poster2.jpg" width="1389" height="614" alt="Video"></object></video>
 
 
-%section.l-module--max
+%section.l-module--max#about
   .l-container--narrow
-    %h1.f-header-large 
-      We create the customer experience — from the brand they <span class="is-red">love</span>, to the marketing pieces they <span class="is-blue">touch</span>, to the digital world where they <span class="is-yellow">interact.</span> We have the toolbox to tackle all your creative needs.
+    %h1.f-header-large
+      We create the customer experience — from the brand you <span class="is-red">love</span>, to the marketing pieces you <span class="is-blue">touch</span>, to the digital world where you <span class="is-yellow">interact.</span> We have the toolbox to tackle all your creative needs.
 
 
 %section.l-module--max.darkgrey-bg
 
   .l-container--narrow.chart
+    %span.chart-mask
     %img.icon-chart{:src=>"img/chart.svg", :alt=> "Studio 123 Chart Icon"}
-    %h1.f-header-large.mb-small#about Take your work seriously, not yourself.
+    %h1.f-header-large.mb-small Take your work seriously, not yourself.
     %p.f-subhead We believe in working hard, playing hard, and often blending the two. Einstein said that "Play is the highest form of research." Play sparks exploration. Play keeps us from getting bored and boring. Play is good for business.
 
 

@@ -9,6 +9,16 @@
 	Twitter: @ScottSavarie
 	From: Ontario, Canada
 
+    <Scott Savarie> -- <Designer> -- <@ScottSavarie>
+    Designer: Scott Savarie
+    Contact: scottsavarie [at] gmail.com
+    Twitter: @ScottSavarie
+    From: Ontario, Canada
+
+    <Studio 123> -- <Agency> -- <@studio123>
+    Twitter: @studio123
+    From: Ontario, Canada
+
 # THANKS
 
     <name>
@@ -17,7 +27,7 @@
 
     HTML5, CSS3
     jQuery, Modernizr
-    Middleman
+    Middleman, rails, ruby, javascript
 		
 
 # SITE

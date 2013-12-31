@@ -63,14 +63,34 @@
 .intro-text
   +single-transition(all, 0.2s, ease-out)
   overflow: hidden
+  padding-bottom: $l-s
   +rotateX(-90deg)
   +opacity(0)
+  +translateY(-10px)
 
 .flipped
   +single-transition(all, 0.2s, ease-out, 0.5s)
   overflow: hidden
   +rotateX(0deg)
   +opacity(1)
+  +translateY(60px)
+
+.flipped--last
+  +single-transition(all, 0.2s, ease-out, 0.5s)
+  overflow: hidden
+  +opacity(1)
+  +translateY(0px)
+
+.intro-btn
+  +opacity(0)
+  +translateY(30px)
+
+.intro-btn--visible
+  +single-transition(all, 0.2s, ease-out)
+  +opacity(1)
+  +translateY(0px)
+
+
 
 .no-js
   .intro-text
@@ -89,6 +109,9 @@
     padding-bottom: $l-xl
     img 
       width: 115px
+
+
+
 
 
 .chart
@@ -111,6 +134,20 @@
     img
       width: 100%
       left: 0  
+
+
+.chart-mask
+  display: none
+  @media only screen and (min-width: $third-break)
+    width: 800px
+    height: 156px
+    background: $c-darkgrey
+    display: block
+    position: absolute
+    top: 260px
+    left: 0
+    z-index: 1
+
 
 
 .services-list
@@ -150,9 +187,9 @@
     +scale(0.8)
     +opacity(0)
 
-.icon-chart
-  @media only screen and (min-width: $third-break)
-    +opacity(0)
+// .icon-chart
+//   @media only screen and (min-width: $third-break)
+//     +opacity(0)
 
 .icon-visible
   +single-transition(all, 0.2s, cubic-bezier(0, 0.14, 0.16, 2))
