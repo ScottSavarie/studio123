@@ -10,6 +10,17 @@ if(!Modernizr.svg) {
 
 
 
+
+
+/* =Video delete
+============================================================================== */
+
+if (window.innerWidth <= 769){
+  $("#home-video--intro").remove();
+}
+
+
+
 /* =Header color change
 ============================================================================== */
 
@@ -24,11 +35,12 @@ colorSwapTwo = function(){
     $("#video-overlay-two").toggleClass("is-hidden");
 }
 
+$(document).ready(function(){
 
 window.setInterval(colorSwapOne, 5000);
-
 window.setInterval(colorSwapTwo, 5000);
 
+});
 
 
 
@@ -71,6 +83,7 @@ showBtn = function(){
 }
 
 
+$(document).ready(function(){
 titleFlipAlt()
 titleFlip()
 showNav()
@@ -86,6 +99,7 @@ window.setTimeout(showBtn, 10000);
 window.setTimeout(titleTwo, 3500);
 window.setTimeout(titleThree, 7500);
 
+});
 
 
 
@@ -213,4 +227,8 @@ $(window).scroll(function(event) {
 });
 
 });
+
+
+
+
 

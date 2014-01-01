@@ -14,10 +14,34 @@
   .nav-main
     top: 0
 
+.logo-wrap
+  width: 60px
+  position: relative
+  float: left
+  @media only screen and (min-width: $second-break)
+    width: 70px
+
 .logo
   width: 60px
   @media only screen and (min-width: $second-break)
     width: 70px
+
+
+.logo-gif
+  width: 60px
+  position: absolute
+  +opacity(0)
+  z-index: 10
+  top: 0
+  +single-transition(opacity, 0.2s, ease-out)
+  &:hover, &:focus
+    +opacity(1)
+  @media only screen and (min-width: $second-break)
+    width: 70px
+
+
+
+
 .nav-links
   float: right
   padding-right: 5%
