@@ -28,19 +28,41 @@
     padding: $l-m $l-s
 
 a.nav-link, a.nav-link:visited, %nav-link
-  color: white
+  color: $c-yellow
   text-transform: uppercase
   font-size: $f-s*0.95
   +single-transition(all, 0.2s, ease-out)
   &:hover, &:focus
-    color: $c-yellow
+    color: lighten($c-yellow, 10%)
 
 a.nav-link--red, a.nav-link--red:visited
   @extend %nav-link
+  color: $c-red
   &:hover, &:focus
-    color: $c-red
+    color: lighten($c-red, 10%)
 
 a.nav-link--blue, a.nav-link--blue:visited
   @extend %nav-link
+  color: $c-blue
   &:hover, &:focus
-    color: $c-blue
+    color: lighten($c-blue, 10%)
+
+
+.page-home
+  a.nav-link, a.nav-link:visited, %nav-link
+    color: white
+    text-transform: uppercase
+    font-size: $f-s*0.95
+    +single-transition(all, 0.2s, ease-out)
+    &:hover, &:focus
+      color: $c-yellow
+
+  a.nav-link--red, a.nav-link--red:visited
+    @extend %nav-link
+    &:hover, &:focus
+      color: $c-red
+
+  a.nav-link--blue, a.nav-link--blue:visited
+    @extend %nav-link
+    &:hover, &:focus
+      color: $c-blue

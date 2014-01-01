@@ -33,10 +33,31 @@ p
   font-weight: 400
 
 .is-yellow
-  color: $c-yellow
+  color: $c-yellow !important
+  font-weight: 400
 
 .is-red
-  color: $c-red
+  color: $c-red !important
+  font-weight: 400
 
 .is-blue
-  color: $c-blue    
+  color: $c-blue !important
+  font-weight: 400
+
+.love, .interact, .touch
+  +single-transition(all, 0.2s, ease-out) 
+
+.love
+  color: $c-red 
+  @media only screen and (min-width: $third-break) 
+    color: inherit 
+
+.interact
+  color: $c-yellow
+  @media only screen and (min-width: $third-break) 
+    color: inherit 
+
+.touch
+  color: $c-blue
+  @media only screen and (min-width: $third-break) 
+    color: inherit 

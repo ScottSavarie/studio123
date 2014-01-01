@@ -36,21 +36,30 @@ window.setInterval(colorSwapTwo, 5000);
 ============================================================================== */
 
 titleFlip = function(){
-    $(".intro-text").toggleClass("flipped");
+    $("#intro-text").toggleClass("flipped");
 }
 
+titleFlipAlt = function(){
+    $("#intro-text--alt").addClass("flipped--last");
+}
+
+pullUp = function(){
+    $("#portfolio").addClass("pulled-up");
+}
+
+
 titleFlipLast = function(){
-    $(".intro-text").removeClass("flipped");
-    $(".intro-text").addClass("flipped--last");
+    $("#intro-text").removeClass("flipped");
+    $("#intro-text").addClass("flipped--last");
 }
 
 
 titleTwo = function(){    
-	$(".intro-text" ).text('We are a creative agency rooted in beautiful Northern Ontario.');
+	$("#intro-text" ).text('We are a creative agency rooted in beautiful Northern Ontario.');
 }
 
 titleThree = function(){    
-	$(".intro-text" ).text('You do great work. We get it noticed.');
+	$("#intro-text" ).text('You do great work. We get it noticed.');
 }
 
 showNav = function(){    
@@ -62,9 +71,10 @@ showBtn = function(){
 }
 
 
-
+titleFlipAlt()
 titleFlip()
 showNav()
+pullUp()
 
 window.setTimeout(titleFlip, 3000);
 window.setTimeout(titleFlip, 4000);
@@ -79,7 +89,13 @@ window.setTimeout(titleThree, 7500);
 
 
 
-/* =Parallax header
+
+
+
+
+
+
+/* =icon fade ins
 ============================================================================== */
 
 map_range = function(value, low1, high1, low2, high2) {
@@ -123,8 +139,6 @@ $(window).scroll(function(event) {
     $(".chart-mask").css({height : map_range(scrollTop, iconOne - 433, iconOne - 333, 89, 0)});
     }
 
-
-
   if (window.innerWidth >= 769 && scrollTop >= iconOne - 600){
     $(".icon-one").addClass("icon-visible")
     }
@@ -157,4 +171,46 @@ $(window).scroll(function(event) {
 });
 
 
+
+
+$(window).load(function(){
+
+  var about = $("#about").offset().top;
+
+
+$(window).scroll(function(event) {
+  var scrollTop = $(document).scrollTop();
+
+
+    if (window.innerWidth >= 960 && scrollTop >= about - 100){
+    $(".love").addClass("is-red");
+    }
+
+    if (window.innerWidth >= 960 && scrollTop >= about - 50){
+    $(".touch").addClass("is-blue");
+    }
+
+    if (window.innerWidth >= 960 && scrollTop >= about){
+    $(".interact").addClass("is-yellow");
+    }
+
+
+  else if(window.innerWidth >= 769 && scrollTop <= about - 100){
+    $(".love").removeClass("is-red")
+    }
+
+  else if(window.innerWidth >= 769 && scrollTop <= about - 50){
+    $(".touch").removeClass("is-blue")
+    }
+  else if(window.innerWidth >= 769 && scrollTop <= about){
+    $(".interact").removeClass("is-yellow")
+    }
+
+
+    else {
+      
+    }
+});
+
+});
 

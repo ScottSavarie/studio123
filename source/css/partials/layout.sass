@@ -58,6 +58,10 @@
   @media only screen and (min-width: $second-break)
     max-width: 90%
 
+.pulled-up
+  +translateY(-12em)
+  +single-transition(all, 0.5s, ease-out, 0.5)
+
 .yellow-bg
   background: $c-yellow
   h1, h2, h3, h4, p

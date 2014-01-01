@@ -3,7 +3,6 @@
 .header
   height: 100%
   overflow: hidden
-  background: $c-darkgrey
 
 .header-video-wrapper
   position: absolute
@@ -39,6 +38,7 @@
   z-index: 10
 
 .video-overlay
+  background: $c-blue
   +background-image(linear-gradient(45deg, $c-yellow 12%, $c-blue 72%))
   width: 100%
   height: 100%
@@ -48,6 +48,7 @@
   +single-transition(all, 5s, ease-out)
 
 .video-overlay-two
+  background: $c-yellow
   +background-image(linear-gradient(290deg, $c-red 30%, $c-yellow 72%))
   width: 100%
   height: 100%
