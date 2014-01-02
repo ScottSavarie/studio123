@@ -41,7 +41,6 @@
 
 
 
-
 .nav-links
   float: right
   padding-right: 5%
@@ -49,7 +48,9 @@
     padding-right: 0
   li
     +inline-block
-    padding: $l-m $l-s
+    padding: $l-m $l-s/2
+    @media only screen and (min-width: $second-break)
+      padding: $l-m $l-s
 
 a.nav-link, a.nav-link:visited, %nav-link
   color: $c-yellow

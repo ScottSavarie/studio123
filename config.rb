@@ -50,7 +50,7 @@ page "/sitemap.html", :layout => false
 #   end
 # end
 
-# page "/fr/*", :layout => "layout-fr"
+page "/fr/*", :layout => "layout-fr"
 
 set :css_dir, 'css'
 
