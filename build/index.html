@@ -17,7 +17,6 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link href='css/style.css' rel='stylesheet'>
     <link href='webfonts/ss-social-circle.css' rel='stylesheet'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <script src='//use.typekit.net/ncx2trm.js'></script>
     <script>
       try{Typekit.load();}catch(e){}
@@ -25,23 +24,31 @@
   </head>
   <body class='page-home'>
     <nav class='nav-main'>
-      <a href='index.html'>
-        <img alt='Studio 123 Logo' class='logo' src='img/studio123-logo.jpg'>
-      </a>
+      <div class='logo-wrap'>
+        <a href='index.html'>
+          <img alt='Studio 123 Logo' class='logo' src='img/studio123-logo.jpg'>
+          <img alt='Studio 123 Logo' class='logo-gif' src='img/studio123.gif'>
+        </a>
+      </div>
       <ul class='nav-links'>
         <li>
-          <a class='nav-link' href='index.html#about' id='about-link'>
-            <span>About</span>
-          </a>
-        </li>
-        <li>
-          <a class='nav-link--red' href='work.html'>
+          <a class='nav-link' href='work.html'>
             <span>Work</span>
           </a>
         </li>
         <li>
-          <a class='nav-link--blue' href='#contact' id='contact-link'>
+          <a class='nav-link--red' href='#contact' id='contact-link'>
             <span>Contact</span>
+          </a>
+        </li>
+        <li>
+          <a class='nav-link--blue' href='http://www.studio123ca.tumblr.com'>
+            <span>Blog</span>
+          </a>
+        </li>
+        <li>
+          <a class='nav-link fr lang' href='#'>
+            <span>FR</span>
           </a>
         </li>
       </ul>
@@ -61,13 +68,13 @@
   <div class='header-video-wrapper'>
     <div class='video-overlay' id='video-overlay'></div>
     <div class='video-overlay-two is-hidden' id='video-overlay-two'></div>
-    <video webkit-playsinline id="home-video--intro"class="home-video--intro" autoplay="autoplay" loop="true"><source src="videos/123_bannervid.mp4" type="video/mp4" /><source src="videos/123_bannervid.ogv" type="video/ogv"/><source src="videos/123_bannervid.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/123_bannervid.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--><img src="img/video-poster2.jpg" width="1389" height="614" alt="Video"></object></video>
+    <video webkit-playsinline id="home-video--intro"class="home-video--intro" autoplay="autoplay" loop="true"><source src="videos/123_bannervid.mp4" type="video/mp4" /><source src="videos/123_bannervid.ogv" type="video/ogv"/><source src="videos/123_bannervid.webm" type="video/webm"/><object type="application/x-shockwave-flash" data="flash/player.swf"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="flashvars" value="file=videos/123_bannervid.mp4"><!--[if IE]><!--><param name="movie" value="flash/player.swf"><!--<![endif]--></object></video>
   </div>
 </header>
 <section class='l-module--max' id='about'>
   <div class='l-container--narrow'>
     <h1 class='f-header-large'>
-      We create the customer experience — from the brand you <span class="love">love</span>, to the marketing pieces you <span class="touch">touch</span>, to the digital world where you <span class="interact">interact.</span> We have the toolbox to tackle all your creative needs.
+      We create the customer experience — from the brand they <span class="love">love</span>, and the marketing pieces they <span class="touch">touch</span>, to the digital world where they <span class="interact">interact</span>. We have the toolbox to tackle all your creative needs.
     </h1>
   </div>
 </section>
@@ -76,7 +83,7 @@
     <span class='chart-mask'></span>
     <img alt='Studio 123 Chart Icon' class='icon-chart' src='img/chart.svg'>
     <h1 class='f-header-large mb-small'>Take your work seriously, not yourself.</h1>
-    <p class='f-subhead'>We believe in working hard, playing hard, and often blending the two. Einstein said that "Play is the highest form of research." Play sparks exploration. Play keeps us from getting bored and boring. Play is good for business.</p>
+    <p class='f-subhead'>We believe in working hard, playing hard, and blending the two often. Einstein said, <span class="is-yellow">“Play is the highest form of research.”</span> Play sparks exploration. Play keeps us from getting bored and boring. Play is good for business.</p>
   </div>
   <div class='l-container'>
     <div class='three-col'>
@@ -91,7 +98,7 @@
         <img alt='Studio 123 Collaboration Icon' class='icon-two' src='img/studio2.svg'>
       </div>
       <h2>Collaboration is the common thread.</h2>
-      <p>We believe that the best things stem from collaboration. Studio123's approach fosters collaboration between our team and our yours and drives everything we create. Even our physical studio space is conducive to team-oriented creativity and design. Collaboration means that we succeed when you succeed.</p>
+      <p>We believe that the best things stem from collaboration. Studio123’s approach fosters collaboration between our team and yours and drives everything we create. Even our physical studio space is conducive to team-oriented creativity and design. Collaboration means that we succeed when you succeed.</p>
     </div>
     <div class='three-col'>
       <div class='img-wrap'>
@@ -102,16 +109,40 @@
     </div>
   </div>
   <div class='l-container--wide'>
-    <h2 class='service-header f-header-large'>Here's what we love to do</h2>
+    <h2 class='service-header f-header-large'>Here’s what we love to do</h2>
     <ul class='services-list'>
-      <li>Communication strategy</li>
-      <li>Branding</li>
-      <li>Online marketing</li>
-      <li>Websites and apps</li>
-      <li>Print communication</li>
-      <li>Social media strategy</li>
-      <li>Audio and video</li>
-      <li>Content creation</li>
+      <li>
+        <span>Communication strategy</span>
+        <span class='check'></span>
+      </li>
+      <li>
+        <span>Branding</span>
+        <span class='check'></span>
+      </li>
+      <li>
+        <span>Online marketing</span>
+        <span class='check'></span>
+      </li>
+      <li>
+        <span>Websites and apps</span>
+        <span class='check'></span>
+      </li>
+      <li>
+        <span>Print communication</span>
+        <span class='check'></span>
+      </li>
+      <li>
+        <span>Social media strategy</span>
+        <span class='check'></span>
+      </li>
+      <li>
+        <span>Audio and video</span>
+        <span class='check'></span>
+      </li>
+      <li>
+        <span>Content creation</span>
+        <span class='check'></span>
+      </li>
       <br>
     </ul>
   </div>
@@ -188,26 +219,25 @@
     </div>
   </div>
 </section>
-<section class='l-module--max txt-center contact' id='contact'>
-  <div class='l-container--wide'>
-    <img alt='Pin Image' class='pin-img' src='img/pin.svg'>
-    <h1 class='f-header-large--white'>
-      Our studio is located in an abandoned Inco lunch room in an old mine 7 km under downtown Sudbury. That’s not true, but we will be announcing the opening of our new studio space very very soon.
-    </h1>
-  </div>
-  <div class='l-container--wide'>
-    <a class='btn-main' href='http://www.twitter.com/studio123'>
-      <span>Stay tuned</span>
-    </a>
-  </div>
-</section>
-    <div></div>
+    <section class='l-module--max txt-center contact' id='contact'>
+      <div class='l-container--wide'>
+        <img alt='Pin Image' class='pin-img' src='img/pin.svg'>
+        <h1 class='f-header-large--white'>
+          Our studio is located in an abandoned Inco lunch room in an old mine 7 km under downtown Sudbury. That’s not true, but we will be announcing the opening of our new studio space very very soon.
+        </h1>
+      </div>
+      <div class='l-container--wide'>
+        <a class='btn-main' href='http://www.twitter.com/studio123'>
+          <span>Stay tuned</span>
+        </a>
+      </div>
+    </section>
     <script src='js/modules/jquery-1.8.3.min.js'></script>
     <script src='webfonts/ss-social.js'></script>
     <script src='js/modules/respond.min.js'></script>
     <script src='js/main.js'></script>
     <script>
-      var _gaq=[['_setAccount','UA-17675383-2'],['_trackPageview']];
+      var _gaq=[['_setAccount','UA-46794810-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));

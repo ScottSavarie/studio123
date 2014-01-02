@@ -3,6 +3,10 @@
   vertical-align: top
   overflow: hidden
 
+.l-module--img
+  @extend %l-module
+  line-height: 0
+
 .l-module--spaced
   @extend %l-module
   padding: $l-l 0
@@ -59,8 +63,11 @@
     max-width: 90%
 
 .pulled-up
-  +translateY(-12em)
+  +translateY(-3em)
   +single-transition(all, 0.5s, ease-out, 0.5)
+
+#portfolio
+  margin-bottom: -3em
 
 .yellow-bg
   background: $c-yellow
@@ -142,3 +149,15 @@
     h2
       width: 70%
 
+
+
+.img-half
+  width: 50%
+  float: left
+
+.img-full
+  width: 100%
+
+.img-third
+  width: 33.333%
+  float: left
