@@ -39,12 +39,14 @@ a, a:visited
   &:hover, &:focus
     color: lighten($c-blue, 12%)
 
-a.grey-link, a.grey-link:visited
-  color: $c-grey
+a.link-white, a.link-white:visited
+  color: white
+  +single-transition(all, 0.2s, ease-out)
+  position: relative
   &:hover, &:focus
-    color: lighten($c-grey, 12%)
+    color: white
+    +opacity(0.6)
     
-
 
 img
   max-width: 100%
