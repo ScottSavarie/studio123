@@ -67,11 +67,11 @@ titleFlipLast = function(){
 
 
 titleTwo = function(){    
-	$("#intro-text" ).text('On est une firme de communications ancré dans le Nouvel Ontario.');
+	$("#intro-text" ).text('Nous sommes une agence de création ancrée dans le Nouvel-Ontario.');
 }
 
 titleThree = function(){    
-	$("#intro-text" ).text('Vous êtes remarquable. On le fait remarquer.');
+	$("#intro-text" ).text('Vous faites du travail remarquable. Nous le faisons remarquer.');
 }
 
 showNav = function(){    
