@@ -252,3 +252,24 @@ $(".en").click(function(){
     reload();
 });
 
+
+
+/* =Scroll To
+============================================================================== */
+
+
+
+
+$("#intro-btn").click(function(){
+    $('html,body').animate({scrollTop: $("#about").offset().top},'slow'); 
+
+});
+
+
+$("#contact-link").click(function(){
+    $('html,body').animate({scrollTop: $("#contact").offset().top},'slow'); 
+
+});
+
+
+
