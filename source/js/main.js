@@ -286,7 +286,7 @@ $(window).load(function(){
   $("#contact-link").click(function(){
       $('html,body').animate({
         scrollTop: contactLocation
-      },1500); 
+      },1800); 
   });
 
 });
