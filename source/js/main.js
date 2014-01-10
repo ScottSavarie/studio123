@@ -261,14 +261,37 @@ $(".en").click(function(){
 
 
 
-$("#intro-btn").click(function(){
-    $('html,body').animate({scrollTop: $("#about").offset().top},'slow'); 
+
+$(window).load(function(){
+
+  var aboutLocation = $("#about").offset().top;
+
+  $("#intro-btn").click(function(){
+      $('html,body').animate({
+        scrollTop: aboutLocation
+      },800); 
+
+  });
 
 });
 
 
-$("#contact-link").click(function(){
-    $('html,body').animate({scrollTop: $("#contact").offset().top},'slow'); 
+
+
+
+$(window).load(function(){
+
+  var contactLocation = $("#contact").offset().top;
+
+  $("#contact-link").click(function(){
+      $('html,body').animate({
+        scrollTop: contactLocation
+      },1500); 
+  });
 
 });
+
+
+
+
 
