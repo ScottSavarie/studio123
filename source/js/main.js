@@ -44,6 +44,49 @@ window.setInterval(colorSwapTwo, 5000);
 
 
 
+
+/* =Scroll To
+============================================================================== */
+
+
+$(window).load(function(){
+
+  var contactLocation = $("#contact").offset().top;
+
+  $("#contact-link").click(function(){
+      $('html,body').animate({
+        scrollTop: contactLocation
+      },1800); 
+  });
+
+});
+
+
+
+
+$(window).load(function(){
+
+  var aboutLocation = $("#about").offset().top;
+
+  $("#intro-btn").click(function(){
+      $('html,body').animate({
+        scrollTop: aboutLocation
+      },800); 
+
+  });
+
+});
+
+
+
+
+
+
+
+
+
+
+
 /* =Intro Animations
 ============================================================================== */
 
@@ -254,42 +297,6 @@ $(".en").click(function(){
 
 
 
-
-/* =Scroll To
-============================================================================== */
-
-
-
-
-
-$(window).load(function(){
-
-  var aboutLocation = $("#about").offset().top;
-
-  $("#intro-btn").click(function(){
-      $('html,body').animate({
-        scrollTop: aboutLocation
-      },800); 
-
-  });
-
-});
-
-
-
-
-
-$(window).load(function(){
-
-  var contactLocation = $("#contact").offset().top;
-
-  $("#contact-link").click(function(){
-      $('html,body').animate({
-        scrollTop: contactLocation
-      },1800); 
-  });
-
-});
 
 
 
